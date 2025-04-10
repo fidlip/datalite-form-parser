@@ -1,0 +1,8 @@
+@if (formElement) {
+  <mat-form-field class="form-field">
+    @if (formElement.title) {
+      <mat-label>{{formElement.title}}</mat-label>
+    }
+    <textarea matInput cdkTextareaAutosize [required]="!!formElement.required" [formControl]="formElement.formControl"></textarea>
+  </mat-form-field>
+}

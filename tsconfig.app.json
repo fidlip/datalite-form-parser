@@ -7,7 +7,14 @@
     "types": []
   },
   "files": [
-    "src/main.ts"
+    "src/main.ts",
+    "src/app/components/widgets/date/date.component.ts",
+    "src/app/components/widgets/dtl-fluent-card/dtl-fluent-card.component.ts",
+    "src/app/components/widgets/dtl-fluent-columns/dtl-fluent-columns.component.ts",
+    "src/app/components/widgets/dtl-fluent-section/dtl-fluent-section.component.ts",
+    "src/app/components/widgets/select/select.component.ts",
+    "src/app/components/widgets/text/text.component.ts",
+    "src/app/components/widgets/textarea/textarea.component.ts",
   ],
   "include": [
     "src/**/*.d.ts"

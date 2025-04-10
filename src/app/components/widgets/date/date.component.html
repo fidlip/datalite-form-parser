@@ -1,0 +1,29 @@
+@if (formElement) {
+  <mat-form-field class="form-field">
+    @if (formElement.title) {
+      <mat-label>{{ formElement.title }}</mat-label>
+    }
+    <input
+      matInput
+      [required]="!!formElement.required"
+      [value]="date"
+      (dateChange)="onDateChange($event)"
+      [matDatepicker]="picker"
+      [min]="minDate"
+      readonly
+    >
+    @if (formElement.formControl.value) {
+      <button
+        matSuffix
+        mat-icon-button
+        (click)="formElement.formControl.setValue('')"
+        tabindex="-1"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    }
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker ></mat-datepicker>
+
+  </mat-form-field>
+}

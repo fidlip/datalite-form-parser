@@ -1,5 +1,14 @@
 # DataliteFormParser
 
+## Na co bych se v reálu zeptal:
+
+- jak mám naložit s nelogičnostmi, či nedodělky ve schematu, např:
+  - zda se má `config.columns` aplikovat opravdu na widget dtl-fluent-section (dle schematu má pouze 1 prvek, ne 6, které z konfigurace vyplývají, 6 jich je ve vnořeném elementu). V tuto chvíli neimplementováno.
+  - lokalizace - ve schematu je velice hrubě nakousnuta
+  - prefix `dtl-fluent-`
+- jak hodně se crcat s dynamičností formuláře
+  
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
 ## Development server

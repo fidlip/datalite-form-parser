@@ -1,0 +1,13 @@
+@if (formElement) {
+  <mat-form-field class="form-field">
+    @if (formElement.title) {
+      <mat-label>
+        {{formElement.title}}
+      </mat-label>
+    }
+    <input type="text" matInput [required]="!!formElement.required" [formControl]="formElement.formControl">
+    @if (formElement.formControl.invalid) {
+      <mat-error>{{ errorMessage() }}</mat-error>
+    }
+  </mat-form-field>
+}

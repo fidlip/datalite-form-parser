@@ -1,0 +1,13 @@
+<div class="columns" [style.grid-template-columns]="columnWidths">
+  @if (formElement.widget.config?.columns) {
+    @for (col of formElement.widget.config?.columns; track $index) {
+      <div class="column">
+        @for (itemIndex of col.content; track $index) {
+          <dl-dynamic-component-loader [formElement]="formElement.items[itemIndex]"></dl-dynamic-component-loader>
+        }
+      </div>
+    }
+  } @else {
+    No items in columns.
+  }
+</div>

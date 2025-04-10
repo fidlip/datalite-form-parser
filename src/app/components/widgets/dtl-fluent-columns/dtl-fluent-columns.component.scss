@@ -1,0 +1,9 @@
+.columns {
+  display: grid;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+}

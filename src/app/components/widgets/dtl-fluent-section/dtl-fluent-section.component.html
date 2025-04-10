@@ -1,0 +1,11 @@
+<div class="section">
+  @if (formElement) {
+    @for (layoutItem of formElement.items; track $index) {
+      <div class="section-item">
+        <dl-dynamic-component-loader [formElement]="layoutItem"></dl-dynamic-component-loader>
+      </div>
+    }
+  } @else {
+    No items in section.
+  }
+</div>

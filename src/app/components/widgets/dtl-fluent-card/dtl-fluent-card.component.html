@@ -1,0 +1,9 @@
+<mat-card class="card">
+  @if (formElement) {
+    @for (item of formElement.items; track $index) {
+      <dl-dynamic-component-loader [formElement]="item"></dl-dynamic-component-loader>
+    }
+  } @else {
+    No items in card.
+  }
+</mat-card>
